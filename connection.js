@@ -8,7 +8,7 @@ const conn = mysql.createConnection({
     database: 'db_node_api'
 });
 
-conn, connect((err)=>{
+conn.connect((err)=>{
     if(err) throw err;
     console.log('Database Connected')
 });
